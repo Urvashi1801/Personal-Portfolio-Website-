@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!----------------------- FONT- AWESOME ---------------------------->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!----------------- MAIN CSS -------------------->
+        <link rel="stylesheet" href="styles.css">
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <title>Personal Portfolio Website</title>
+    </head>
+
+    <body>
+        <!---------------- HEADER DESIGN --------------->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class="fa-duotone fa-solid fa-bars" id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!---------------- HOME SECTION DESIGN ----------------->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hi, <span>Myself</span></h3>
+                <h1>Urvashi Jain</h1>
+                <h4>And I'm a <span class="text" </span></h4>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.linkedin.com/in/urvashi-jain1801/"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Urvashi1801"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <a href="Resume F.pdf" download
+                        class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="home-img"></div>
+                <img src="portfolio2.jpeg" alt="profile pic">
+            </section>
+
+            <!-------------- ABOUT SECTION  DESIGN -------------------->
+            <section class="about" id="about">
+                <div class="about-img">
+                    <img src="about2.jpeg" alt="about pic">
+                </div>
+                <div class="about-content">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <!-- <h3>Front-end Developer</h3> -->
+                    <p class="emoji">"Hello!👋<br><br>I'm Urvashi Jain, a
+                        passionate and motivated Front-End Developer ready to
+                        start my career
+                        in Web development. I
+                        hold a Master's in Computer Applications (MCA) and have
+                        a keen interest in creating beautiful,
+                        user-friendly websites.
+                        With a strong foundation in HTML, CSS,I'm excited to
+                        learn and grow in the tech industry, tackling new
+                        challenges and improving my skills every day." </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"
+                            onclick="opentab('education')">Education</p>
+                        <p class="tab-links"
+                            onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"
+                            onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2020 - 2022</span><br>Master of Computer
+                                Applications from JEC<br>JBP</li>
+                            <li><span>2017 - 2020</span><br>Bachelor of Computer
+                                Applications from MCU<br>JBP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Design</span><br>Appealing and
+                                User-friendly website layouts</li>
+                            <li><span>Front-end Developer</span><br>Websites and
+                                Applications using HTML,CSS</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>FRESHER</span><br>"A fresher is an
+                                individual who is new to the professional world,
+                                eager to learn and start their career
+                                journey."</li>
+                        </ul>
+                    </div>
+
+                    <!-- <a href="#" class="btn">Read more</a> -->
+                </div>
+            </section>
+
+            <!---------------------- SERVICES SECTION DESING ----------------------->
+            <section class="services" id="services">
+                <h2 class="heading">My<span>Services</span></h2>
+                <div class="services-container">
+                    <div class="services-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Front-end Developer</h3>
+                        <p>"As a fresher front-end developer, I'm excited to
+                            create dynamic, user-friendly websites using HTML,
+                            CSS, while continuously learning and improving my
+                            skills."</p>
+                        <a href class="btn">Read More</a>
+                    </div>
+
+                    <div class="services-box">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>Web Design</h3>
+                        <p>"As a fresher in web design, I'm eager to create
+                            visually appealing and user-friendly websites that
+                            combine design with
+                            functionality."</p>
+                        <a href class="btn">Read More</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--------------- PORTFOLIO SECTION DESIGN ------------------------>
+            <section class="portfolio" id="portfolio">
+                <h2 class="heading"> My Latest<span> Works</span></h2>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="project1.png" alt="project1 img">
+                        <div class="portfolio-layer">
+                            <h4>Parallax website</h4>
+                            <p>Enjoy a smooth and beautiful scrolling experience
+                                with our parallax website.</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="project2.png" alt="project2 img">
+                        <div class="portfolio-layer">
+                            <h4>Job Application web</h4>
+                            <p>Job Application form using HTML, CSS.</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="project3.png" alt="project2 img">
+                        <div class="portfolio-layer">
+                            <h4>Sing In & Sing Up Form</h4>
+                            <p>Responsive Sign In & Sign Up form with seamless
+                                user experience using HTML, CSS, and
+                                JavaScript.</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="project4.png" alt="project2 img">
+                        <div class="portfolio-layer">
+                            <h4>Calculator</h4>
+                            <p>A simple calculator application for performing
+                                basic arithmetic operations.</p>
+                            <i class="fa-solid fa-up-right-from-square"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!---------------- CONTACT SECTION DESIGN ---------------->
+            <div id="contact">
+                <div class="container">
+                    <h2>Get in touch</h2>
+                    <div class="row">
+                        <div class="contact-left">
+                            <h2 class="sub-title">Let's talk </h2>
+                            <p><i class="fas fa-paper-plane"></i>Email:
+                                jainurvashi762@gmail</p>
+                            <p><i class="fas fa-phone-square-alt"></i>Phone: +91
+                                9999999999</p>
+                            <p><i class="fa-solid fa-location-dot"></i>Location:
+                                Jabalpur, India </p>
+                            <div class="social-icons">
+
+                                <a
+                                    href="https://www.linkedin.com/in/urvashi-jain1801/"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Urvashi1801"><i
+                                        class="fa-brands fa-github"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="contact-right">
+                            <form action="https://api.web3forms.com/submit"
+                                method="POST">
+                                <input type="hidden" name="access_key"
+                                    value="cb254c30-6e23-4d80-afb0-c1e8af8f10f7">
+                                <input type="text" name="Name"
+                                    placeholder="Your Name" required>
+                                <input type="email" name="Email"
+                                    placeholder="Your Email" required>
+                                <input type="number" name="Phone"
+                                    placeholder="Your Phone No." required>
+                                <textarea name="Message" rows="6"
+                                    placeholder="Your Message"
+                                    required></textarea>
+                                <button type="submit"
+                                    class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------- FOOTER DESIGN ----------------->
+            <footer class="footer">
+                <div class="footer-text">
+                    <p><i class="fa-regular fa-copyright"></i>2024 <span>
+                            Urvashi Jain.</span> All right reserved.</p>
+                </div>
+                <div class="footer-iconTop">
+                    <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+                </div>
+            </footer>
+
+            <!----------- SCROLL REVEAL JS -------------->
+            <script src="https://unpkg.com/scrollreveal"></script>
+
+            <!------------------- TYPED JS ------------------------->
+            <script
+                src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+            <!------------------ MAIN JS ------------------->
+            <script src="main.js"></script>
+
+        </body>
+
+    </html>
